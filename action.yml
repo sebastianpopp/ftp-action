@@ -1,0 +1,27 @@
+name: 'FTP Action'
+description: 'Mirrors a directory with a FTP server.'
+author: 'Sebastian Popp <ftp-action@sebastianpopp.com>'
+inputs:
+  host:
+    description: 'FTP host'
+    required: true
+  user:
+    description: 'FTP user'
+    required: true
+  password:
+    description: 'FTP password'
+    required: true
+  localDir:
+    description: 'Local directory'
+    required: false
+    default: '.'
+  remoteDir:
+    description: 'Remote directory'
+    required: false
+    default: '.'
+branding:
+  color: 'blue'
+  icon: 'upload'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
