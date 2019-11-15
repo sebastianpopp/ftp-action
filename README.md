@@ -16,7 +16,7 @@ jobs:
     - name: Deploy FTP
       uses: sebastianpopp/ftp-action@master
       with:
-        host: "ftp.example.com"
+        host: ${{ secrets.FTP_SERVER }}
         user: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         localDir: "dist"
