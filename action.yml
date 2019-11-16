@@ -1,6 +1,6 @@
-name: 'FTP Action'
-description: 'Mirrors a directory with a FTP server.'
+name: 'ftp-action'
 author: 'Sebastian Popp <ftp-action@sebastianpopp.com>'
+description: 'Automate copying your files via FTP using this GitHub action.'
 inputs:
   host:
     description: 'FTP host'
@@ -19,9 +19,9 @@ inputs:
     description: 'Remote directory'
     required: false
     default: '.'
-branding:
-  color: 'blue'
-  icon: 'upload'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+branding:
+  color: 'blue'
+  icon: 'upload-cloud'

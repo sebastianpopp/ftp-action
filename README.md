@@ -1,20 +1,20 @@
 # ftp-action
 
-Automate copying your files via FTP using this GitHub action.
+Automate copying your files via ftp using this GitHub action.
 
 ## Example usage
 
 ```
-name: Upload via FTP
+name: Deploy via ftp
 on: push
 jobs:
-  FTP-Action:
-    name: FTP-Action
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Deploy FTP
-      uses: sebastianpopp/ftp-action@master
+    - name: Upload ftp
+      uses: sebastianpopp/ftp-action@releases/v1
       with:
         host: ${{ secrets.FTP_SERVER }}
         user: ${{ secrets.FTP_USERNAME }}
