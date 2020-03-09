@@ -14,7 +14,7 @@ inputs:
   forceSsl:
     description: 'Force SSL encryption'
     required: false
-    default: false
+    default: 'false'
   localDir:
     description: 'Local directory'
     required: false
