@@ -11,6 +11,10 @@ inputs:
   password:
     description: 'FTP password'
     required: true
+  forceSsl:
+    description: 'Force SSL encryption'
+    required: false
+    default: 'false'
   localDir:
     description: 'Local directory'
     required: false
