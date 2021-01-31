@@ -23,6 +23,10 @@ inputs:
     description: 'Remote directory'
     required: false
     default: '.'
+  options:
+    description: 'Additional mirror command options'
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
