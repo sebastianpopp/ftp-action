@@ -21,6 +21,7 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         localDir: "dist"
         remoteDir: "www"
+        options: "--delete --asci"
 ```
 
 ## Input parameters
@@ -33,3 +34,4 @@ password | FTP password | Yes | N/A
 localDir | The local directory to copy | No | .
 remoteDir | The remote directory to copy to | No | .
 forceSsl | Force SSL encryption | No | false
+options | Mirror command options | No | ''
