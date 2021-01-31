@@ -1,5 +1,5 @@
-name: 'ftp-action'
-author: 'Sebastian Popp <ftp-action@sebastianpopp.com>'
+name: 'ftp-action-delete-first'
+author: 'hsimah'
 description: 'Automate copying your files via FTP using this GitHub action.'
 inputs:
   host:
