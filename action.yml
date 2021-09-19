@@ -1,35 +1,39 @@
-name: 'ftp-action'
-author: 'Sebastian Popp <ftp-action@sebastianpopp.com>'
-description: 'Automate copying your files via FTP using this GitHub action.'
+name: "ftp-action"
+author: "Sebastian Popp <ftp-action@sebastianpopp.com>"
+description: "Automate copying your files via FTP using this GitHub action."
 inputs:
   host:
-    description: 'FTP host'
+    description: "FTP host"
     required: true
   user:
-    description: 'FTP user'
+    description: "FTP user"
     required: true
   password:
-    description: 'FTP password'
+    description: "FTP password"
     required: true
+  port:
+    description: "FTP port"
+    required: false
+    default: "21"
   forceSsl:
-    description: 'Force SSL encryption'
+    description: "Force SSL encryption"
     required: false
-    default: 'false'
+    default: "false"
   localDir:
-    description: 'Local directory'
+    description: "Local directory"
     required: false
-    default: '.'
+    default: "."
   remoteDir:
-    description: 'Remote directory'
+    description: "Remote directory"
     required: false
-    default: '.'
+    default: "."
   options:
-    description: 'Additional mirror command options'
+    description: "Additional mirror command options"
     required: false
-    default: ''
+    default: ""
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: "docker"
+  image: "Dockerfile"
 branding:
-  color: 'blue'
-  icon: 'upload-cloud'
+  color: "blue"
+  icon: "upload-cloud"
