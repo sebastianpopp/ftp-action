@@ -1,4 +1,4 @@
-FROM alpine:3.11
+FROM aalpine:3.17.0
 
 COPY LICENSE README.md /
 
